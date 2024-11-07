@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(83, 211, 237);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.notes {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+
+.note {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 16px;
+    background-color: rgb(211, 219, 196);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    resize: none;
+    font-size: 14px;
+    line-height: 1.4;
+    outline: none;
+    overflow: auto;
+}
+
+.add-note {
+    font-size: 80px;
+    border-radius: 50%;
+    background-color: #e29ae8;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+    height: 280px;
+    width: 280px;
+    grid-column: span 1;
+    position: relative;
+    top: 20px;
+
+}
+
+
+.add-note:hover {
+    background-color: #f27f0d;
+    transform: scale(1.1);
+}
+
+.note::placeholder {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.4);
+}
